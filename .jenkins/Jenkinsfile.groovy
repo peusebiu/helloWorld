@@ -1,9 +1,9 @@
-node(master’) {
-    stage(‘Checkout’) {
+node("master") {
+    stage("Checkout") {
         checkout scm
     }
-    stage('Build') {
-        echo ‘Hello World’
+    stage("Build") {
+        echo "Hello World"
     }
 }
 
